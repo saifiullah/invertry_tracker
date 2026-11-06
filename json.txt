@@ -1,0 +1,30 @@
+[
+ {
+  "Name": "sugar",
+  "Catagory": "food",
+  "Quantity": "50",
+  "Price": 120,
+  "Total_price": 6000
+ },
+ {
+  "Name": "rice",
+  "Catagory": "food",
+  "Quantity": "50",
+  "Price": 340,
+  "Total_price": 17000
+ },
+ {
+  "Name": "bottle",
+  "Catagory": "food",
+  "Quantity": "12",
+  "Price": 93,
+  "Total_price": 1116
+ },
+ {
+  "Name": "dalda",
+  "Catagory": "food",
+  "Quantity": "16",
+  "Price": 410,
+  "Total_price": 6560
+ }
+]

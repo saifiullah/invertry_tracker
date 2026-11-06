@@ -5,3 +5,7 @@ while True:
     if user_will== 1:
         from function import add_stock
         add_stock()
+    if user_will==2:
+        from function import stock_inventry
+        stock_inventry()
+
