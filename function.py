@@ -32,5 +32,6 @@ def stock_inventry():
         input_user=input("Enter the name of product for which you wants to search :")
         for dat in data:
             if dat["Name"] ==input_user:
-                print(dat)
+                print("Qty :",dat["Quantity"])
+                print("price :",dat["Total_price"])
 
