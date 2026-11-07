@@ -28,10 +28,24 @@ def add_stock():
         json.dump(file_open,file,indent=1)
 def stock_inventry():
     with open ("json.txt","r")as file:
-        data=json.load(file)
+        data1=json.load(file)
         input_user=input("Enter the name of product for which you wants to search :")
-        for dat in data:
+        for dat in data1:
             if dat["Name"] ==input_user:
                 print("Qty :",dat["Quantity"])
                 print("price :",dat["Total_price"])
 
+def Update_stock():
+    with open("json.txt","r")as file:
+        read2=json.load(file)
+        user_input2=input("Write the name of thing which you wants to update :")
+        user_input3=input("Enter the new quantity of product :")
+        user_input4=int(input("Enter the new price of product :"))
+        T_price=int(user_input3)*user_input4
+        for read in read2:
+            if read["Name"]==user_input2:
+                read["Quantity"]=user_input3
+                read["Price"]=user_input4
+                read["Total_price"]=T_price
+    with open ("json.txt","w")as file:
+        json.dump(read2,file,indent=1)
