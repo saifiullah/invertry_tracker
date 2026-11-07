@@ -1,10 +1,10 @@
 import json
 class shop:
-    def __init__(self,n,c,w,p):
-        self.Name=n
-        self.Catagory=c
-        self.Quantity=w
-        self.Price=p
+    def __init__(self,name,catagorie,quantity,price):
+        self.Name=name.upper()
+        self.Catagory=catagorie.upper()
+        self.Quantity=quantity
+        self.Price=price
         self.Total_price=int(w)*p
 def add_stock():
     
@@ -42,10 +42,7 @@ def Update_stock():
         user_input3=input("Enter the new quantity of product :")
         user_input4=int(input("Enter the new price of product :"))
         T_price=int(user_input3)*user_input4
-<<<<<<< Updated upstream:function1.py
-=======
         print(T_price)
->>>>>>> Stashed changes:function.py
         for read in read2:
             if read["Name"]==user_input2:
                 read["Quantity"]=user_input3
@@ -53,3 +50,10 @@ def Update_stock():
                 read["Total_price"]=T_price
     with open ("json.txt","w")as file:
         json.dump(read2,file,indent=1)
+def s_hightlight():
+    with open("json.txt","r")as file:
+        read3=json.load(file)
+        for read in read3:
+            if int(read["Quantity"])<=50:
+                print(f"{read["Name"]}\nTHIS STOCK IS NOT ENOUGH PLEASE RESTOCK THESE PRODUT")
+

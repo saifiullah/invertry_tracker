@@ -11,6 +11,10 @@ while True:
         stock_inventry()
         break
     if user_will==3:
-        from function import Update_stock
+        from function1 import Update_stock
         Update_stock()
+        break
+    if user_will==4:
+        from function1 import s_hightlight
+        s_hightlight()
         break
