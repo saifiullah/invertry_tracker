@@ -42,6 +42,10 @@ def Update_stock():
         user_input3=input("Enter the new quantity of product :")
         user_input4=int(input("Enter the new price of product :"))
         T_price=int(user_input3)*user_input4
+<<<<<<< Updated upstream:function1.py
+=======
+        print(T_price)
+>>>>>>> Stashed changes:function.py
         for read in read2:
             if read["Name"]==user_input2:
                 read["Quantity"]=user_input3
