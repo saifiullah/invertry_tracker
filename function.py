@@ -34,4 +34,4 @@ def stock_inventry():
             if dat["Name"] ==input_user:
                 print("Qty :",dat["Quantity"])
                 print("price :",dat["Total_price"])
-
+#this is completed
